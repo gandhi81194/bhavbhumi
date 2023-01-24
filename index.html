@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="./slick.css" />
+
+    <link rel="stylesheet" type="text/css" href="./slick-theme.css" />
+    <link rel="stylesheet" href=
+"https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+    <style type="text/css">
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: 'Poppins';
+            /* border: 1px solid black; */
+           
+        }
+        .nav {
+            margin-left: 40%;
+        }
+
+        /* slider */
+        .img {
+            width: 100%;
+           
+        }
+
+        .caption {
+            font-size: 48px;
+            background-color: rgba(245, 245, 245, 0.585);
+            width: 70%;
+            text-transform: capitalize;
+            position: absolute;
+            bottom: 10px;
+            text-align: center;
+            margin-left: 15%;
+        }
+
+        .slide {
+            position: relative;
+            padding: 0px;
+        }
+        .arrow{
+            font-size: 48px;
+            background-color:rgba(245, 245, 245, 0.585);
+            position: absolute ;
+            bottom: 10px;
+            width: 70px;
+            border-radius: 50%;
+            text-align: center;
+            
+            height: 70px;
+        }
+        .bi-caret-left-fill{
+        left: 10%;
+
+        }
+        .bi-caret-right-fill{
+        right: 10%;
+
+        }
+
+        /* facilities */
+        .facility,
+        .icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .set {
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: center;
+            align-content: space-between;
+            margin: 2%;
+        }
+
+        .iconbox {
+            margin: 2%;
+            width: 240px;
+
+        }
+
+        /* rent */
+        .rentbox {
+            background-image: url(./box3/Rectangle\ 48.png);
+        }
+
+        .rent-gallary {
+            width: 300px;
+           
+            height: 350px;
+
+
+        }
+        .rentcaption2{
+            width: 100%;
+            background-color: #002f4faa;
+            font-size: 24px;
+            color: #ffffff;
+            display: flex;
+            align-content: center;
+            justify-content: center;
+            position: absolute;
+            bottom: 0px;
+            align-items: center;
+            justify-content: space-evenly;
+         }
+         .rentcaption1{
+            /* style="font-size: 24px;text-transform: capitalize;color: #ffffff;margin-left: 20px;" */
+            font-size: 24px;
+            text-transform: capitalize;
+            color: #ffffff;
+            margin-left: 20px;
+            position: absolute;
+            bottom: 50px;
+
+         }
+         @media screen and (max-width:992px) {
+            .caption {
+            font-size: 25px;
+           }
+           .arrow{
+            font-size: 23px;
+            
+           box-sizing: content-box;
+            bottom: 13px;
+            width: 30px;
+            
+            text-align: center;
+            
+            height: 30px;
+        }
+        .bi-caret-left-fill{
+        left: 8%;
+
+        }
+        .bi-caret-right-fill{
+        right: 8%;
+
+        }
+
+            
+         }
+         @media screen and (max-width:600px) {
+            .arrow{
+            font-size: 15px;
+            bottom: 12px;
+            width: 15px;
+            height: 20px;
+        }
+        .caption {
+            font-size: 15px;
+           }
+
+         }
+
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg container-fluid">
+        <div class="container ">
+            <a class="navbar-brand" href="#"><img src="./box1/Bhavbhumi.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse nav" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Facilities</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">rent</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ">contact us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- slider -->
+    <div class="container-fluid">
+        <div class="row" style="position: relative;">
+            <div class="col slider">
+                <div class="slide">
+                    <div>
+                        <img class="img" src="./box1/Rectangle 45 (1).png" alt="">
+                    </div>
+                    <div class="caption">bhavbhumi party plot img1</div>
+                    
+                </div>
+                <div class="slide">
+                    <div>
+                        <img class="img" src="./box1/Rectangle 45 (2).png" alt="">
+                    </div>
+                    <div class="caption">bhavbhumi party plot img2</div>
+                </div>
+                <div class="slide">
+                    <div>
+                        <img class="img" src="./box1/Rectangle 45.png" alt="">
+                    </div>
+                    <div class="caption">bhavbhumi party plot img3</div>
+                </div>
+                
+            </div>
+            <i class="bi bi-caret-left-fill arrow" ></i>
+            <i class="bi bi-caret-right-fill arrow" ></i>
+        </div>
+    </div>
+    <!-- facilieties -->
+    <div class="container box2" style="margin-top: 5%;">
+        <div class="row">
+            <div class="col">
+                <h2 style="text-align: center;text-transform: capitalize;font-size: 40px;">facilities</h2>
+                <div class="facility">
+                    <div style="width: 90px;height: 5px;background-color: #f38341;"></div>
+                    <div class="facility" style="width: 80px;">
+                        <div style="width: 15px;height: 15px;border-radius: 50%;background-color:#f38341;"></div>
+                        <div style="width: 20px;height: 20px;border-radius: 50%;background-color:#002f4f;margin: 10px;">
+                        </div>
+                        <div style="width: 15px;height: 15px;border-radius: 50%;background-color:#f38341;"></div>
+                    </div>
+                    <div style="width: 90px;height: 5px;background-color: #f38341;"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row facility">
+            <div class="col-10 facility set ">
+
+                
+                <div class="iconbox">
+                    <div class="icon">
+                        <div style="width: 90px;height: 5px;background-color: #f38341;"></div>
+                        <div class="" style="width: 80px;margin: 10px;">
+                            <img src="./box2/cctv.png" alt="">
+
+                        </div>
+                        <div style="width: 90px;height: 5px;background-color: #f38341;"></div>
+                    </div>
+                    <div style="font-size: 20px;color: #002f4f;text-align: center;"><b>CCTV Camera for security</b>
+                    </div>
+                </div>
+                <div class="iconbox">
+                    <div class="icon">
+                        <div style="width: 90px;height: 5px;background-color: #f38341;"></div>
+                        <div class="" style="width: 80px;margin: 10px;">
+                            <img src="./box2/hotel.png" alt="">
+
+                        </div>
+                        <div style="width: 90px;height: 5px;background-color: #f38341;"></div>
+                    </div>
+                    <div style="font-size: 20px;color: #002f4f;text-align: center;"><b>Hall with capacity of 150
+                            people</b></div>
+                </div>
+                <div class="iconbox">
+                    <div class="icon">
+                        <div style="width: 90px;height: 5px;background-color: #f38341;"></div>
+                        <div class="" style="width: 80px;margin: 10px;">
+                            <img src="./box2/Rounded Rectangle 1 (3).png" alt="">
+
+                        </div>
+                        <div style="width: 90px;height: 5px;background-color: #f38341;"></div>
+                    </div>
+                    <div style="font-size: 20px;color: #002f4f;text-align: center;"><b>2413 Sq. Metre Lawn Area</b>
+                    </div>
+                </div>
+                <div class="iconbox">
+                    <div class="icon">
+                        <div style="width: 90px;height: 5px;background-color: #f38341;"></div>
+                        <div class="" style="width: 80px;margin: 10px;">
+                            <img src="./box2/light.png" alt="">
+
+                        </div>
+                        <div style="width: 90px;height: 5px;background-color: #f38341;"></div>
+                    </div>
+                    <div style="font-size: 20px;color: #002f4f;text-align: center;"><b>High Mast Lights</b></div>
+                </div>
+                <div class="iconbox">
+                    <div class="icon">
+                        <div style="width: 90px;height: 5px;background-color: #f38341;"></div>
+                        <div class="" style="width: 80px;margin: 10px;">
+                            <img src="./box2/parking.png" alt="">
+
+                        </div>
+                        <div style="width: 90px;height: 5px;background-color: #f38341;"></div>
+                    </div>
+                    <div style="font-size: 20px;color: #002f4f;text-align: center;"><b>Parking Facility on road</b>
+                    </div>
+                </div>
+                <div class="iconbox">
+                    <div class="icon">
+                        <div style="width: 90px;height: 5px;background-color: #f38341;"></div>
+                        <div class="" style="width: 80px;margin: 10px;">
+                            <img src="./box2/ac.png" alt="">
+
+                        </div>
+                        <div style="width: 90px;height: 5px;background-color: #f38341;"></div>
+                    </div>
+                    <div style="font-size: 20px;color: #002f4f;text-align: center;"><b>4 A.C. Rooms</b></div>
+                </div>
+                
+                <div class="iconbox">
+                    <div class="icon">
+                        <div style="width: 90px;height: 5px;background-color: #f38341;"></div>
+                        <div class="" style="width: 80px;margin: 10px;">
+                            <img src="./box2/water.png" alt="">
+
+                        </div>
+                        <div style="width: 90px;height: 5px;background-color: #f38341;"></div>
+                    </div>
+                    <div style="font-size: 20px;color: #002f4f;text-align: center;"><b>Full time availability of
+                            Water</b></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- rent -->
+    <div class="container-fluid rentbox" >
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h2 style="text-align: center;text-transform: capitalize;font-size: 40px;color: #ffffff;margin-top: 5%;">rent</h2>
+                    <div class="facility">
+                        <div style="width: 90px;height: 5px;background-color: #ffffff;"></div>
+                        <div class="facility" style="width: 80px;">
+                            <div style="width: 15px;height: 15px;border-radius: 50%;background-color:#f38341;"></div>
+                            <div
+                                style="width: 20px;height: 20px;border-radius: 50%;background-color:#002f4f;margin: 10px;">
+                            </div>
+                            <div style="width: 15px;height: 15px;border-radius: 50%;background-color:#f38341;"></div>
+                        </div>
+                        <div style="width: 90px;height: 5px;background-color: #ffffff;"></div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col" style="display: flex;justify-content: space-between;margin: 2%;flex-wrap: wrap;justify-content: center;">
+                    <div class="rent-gallary" style="position: relative; background-image: url(./box3/Rectangle\ 49\ copy\ 6.png);margin: 2%;">
+                        <div class="rentcaption1">
+                            <p ><b>For<br> Dandya<br>
+                                    Raas</b></p>
+                        </div>
+                        <div class="rentcaption2">
+                            ₹ 20,000/-*<p style="font-size: 18px; margin-top: 10px;" >(Evening 6 to 10)</p>
+                        </div>
+                    </div>
+                    <div class="rent-gallary" style="position: relative;background-image: url(./box3/Rectangle\ 49\ copy\ 6\ \(1\).png);margin: 2%;">
+                        <div class="rentcaption1">
+                            <p ><b>For<br> Dandya<br>
+                                    Raas</b></p>
+                        </div>
+                        <div class="rentcaption2">
+                            ₹ 20,000/-*<p style="font-size: 18px; margin-top: 10px;" >(Evening 6 to 10)</p>
+                        </div>
+                    </div>
+                    <div class="rent-gallary" style="position: relative;background-image: url(./box3/Rectangle\ 49\ copy\ 6\ \(2\).png);margin: 2%;">
+                        <div class="rentcaption1">
+                            <p ><b>For<br> Dandya<br>
+                                    Raas</b></p>
+                        </div>
+                        <div class="rentcaption2">
+                            ₹ 20,000/-*<p style="font-size: 18px; margin-top: 10px;" >(Evening 6 to 10)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- contact us -->
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h2 style="text-align: center;text-transform: capitalize;font-size: 40px;margin-top: 5%;">contact us</h2>
+                    <div class="facility">
+                        <div style="width: 90px;height: 5px;background-color:#f38341;"></div>
+                        <div class="facility" style="width: 80px;">
+                            <div style="width: 15px;height: 15px;border-radius: 50%;background-color:#f38341;"></div>
+                            <div
+                                style="width: 20px;height: 20px;border-radius: 50%;background-color:#002f4f;margin: 10px;">
+                            </div>
+                            <div style="width: 15px;height: 15px;border-radius: 50%;background-color:#f38341;"></div>
+                        </div>
+                        <div style="width: 90px;height: 5px;background-color:#f38341;"></div>
+                    </div>
+                    <p style="text-align: center;text-transform: capitalize;font-size: 20px;margin-top:10px;">We are available on phone. Call us on below given numbers to know the availability of the plot or for booking.</p>
+
+                </div>
+            </div>
+            <div class="row" style="background-color: #f5f5f5; margin-bottom: 5%;" >
+                <div class="col-lg-6">
+                    <div style="display: flex;">
+                        <div style="margin: 10px;"><img src="./box4/Layer 7 copy 2.png" alt=""></div>
+                        <div style="font-size: 18px;margin: 10px;"><p>Bipin Brahmbhatt: <br> <b>9924921707</b></p></div>
+                    </div>
+                    <div style="display: flex;">
+                        <div style="margin: 10px;"><img src="./box4/Layer 7 copy 2.png" alt=""></div>
+                        <div style="font-size: 18px;margin: 10px;"><p>Bipin Brahmbhatt: <br> <b>9924921707</b></p></div>
+                    </div>
+                    <div style="display: flex;">
+                        <div style="margin: 10px;"><img src="./box4/Layer 7 copy 2.png" alt=""></div>
+                        <div style="font-size: 18px;margin: 10px;"><p>Bipin Brahmbhatt: <br> <b>9924921707</b></p></div>
+                    </div>
+
+                </div>
+                <div class="col-lg-6" >
+                    <div style="display: flex;margin-top: 15%;">
+                    <div style="margin: 10px;"><img src="./box4/Layer 8.png" alt=""></div>
+                    <div  style="font-size: 18px;margin: 10px;"><p><b>Address:</b><br>
+                        BHAVBHUMI PARTY PLOT,<br>
+                        Behind Cosmoplex,<br>
+                        New Ring Road,<br>
+                        Rajkot - 360005.</p></div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+<!-- footer -->
+  <div class="container-fluid" style="background-color: #002f4f;font-size: 16px;color: #ffffff;text-align: center;">
+    <div class="row">
+        <div class="col">
+         <p style="margin: 10px;">Copyright © 2016 - All Rights Reserved - Rao Information Technology Pvt. Ltd.</p>
+        </div>
+    </div>
+  </div>
+
+    <script src="./jquery-3.6.3.min.js"></script>
+    <script type="text/javascript" src="./slick.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+<script>
+    $(document).ready(function () {
+        $('.slider').slick({
+            autoplay: true,
+            prevArrow: $('.bi-caret-left-fill'),
+            nextArrow: $('.bi-caret-right-fill'),
+
+        });
+    });
+</script>
+
+</html>
